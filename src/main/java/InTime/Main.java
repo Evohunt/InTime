@@ -13,7 +13,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        URL url = new File("src/main/java/InTime/view/login.fxml").toURI().toURL();
+        URL url = new File("src/main/java/InTime/view/register.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
         primaryStage.setTitle("InTime ALPHA");
         primaryStage.setScene(new Scene(root, 900, 500));

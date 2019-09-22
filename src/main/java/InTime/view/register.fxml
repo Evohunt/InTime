@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InTime.controller.RegisterController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="900.0" styleClass="main_background" stylesheets="@../css/backgrounds.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="3.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.png" />
+               </image>
+            </ImageView>
+            <JFXTextField layoutX="115.0" layoutY="159.0" prefHeight="30.0" prefWidth="310.0" promptText="First name" styleClass="input_field" stylesheets="@../css/inputs.css" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="75.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user_icon.png" />
+               </image>
+            </ImageView>
+            <Line endX="753.0" layoutX="125.0" layoutY="113.0" startX="-100.0" stroke="WHITE" />
+            <JFXTextField layoutX="513.0" layoutY="160.0" prefHeight="30.0" prefWidth="310.0" promptText="Last name" styleClass="input_field" stylesheets="@../css/inputs.css" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="473.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user_icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="163.0" layoutY="79.0" prefHeight="31.0" prefWidth="174.0" text="Basic Details" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="114.0" layoutY="215.0" prefHeight="30.0" prefWidth="310.0" promptText="Email" styleClass="input_field" stylesheets="@../css/inputs.css" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="74.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/email_icon.png" />
+               </image>
+            </ImageView>
+            <JFXTextField layoutX="512.0" layoutY="216.0" prefHeight="30.0" prefWidth="310.0" promptText="Username" styleClass="input_field" stylesheets="@../css/inputs.css" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="472.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user_icon.png" />
+               </image>
+            </ImageView>
+            <JFXComboBox layoutX="114.0" layoutY="273.0" prefHeight="30.0" prefWidth="310.0" promptText="Country" styleClass="droplist" stylesheets="@../css/inputs.css" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="74.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/map_icon.png" />
+               </image>
+            </ImageView>
+            <JFXComboBox layoutX="472.0" layoutY="273.0" prefHeight="30.0" prefWidth="155.0" promptText="State" styleClass="droplist" stylesheets="@../css/inputs.css" />
+            <JFXComboBox layoutX="666.0" layoutY="273.0" prefHeight="30.0" prefWidth="155.0" promptText="City" styleClass="droplist" stylesheets="@../css/inputs.css" />
+            <JFXTextField layoutX="114.0" layoutY="327.0" prefHeight="30.0" prefWidth="310.0" promptText="Phone number" styleClass="input_field" stylesheets="@../css/inputs.css" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="74.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/phone_icon.png" />
+               </image>
+            </ImageView>
+            <JFXRadioButton layoutX="471.0" layoutY="343.0" styleClass="gender_radio_button" stylesheets="@../css/inputs.css" text="Male" />
+            <JFXRadioButton layoutX="587.0" layoutY="343.0" styleClass="gender_radio_button" stylesheets="@../css/inputs.css" text="Female" />
+            <JFXButton layoutX="673.0" layoutY="409.0" prefHeight="36.0" prefWidth="150.0" styleClass="signup_button" stylesheets="@../css/buttons.css" text="Continue">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="25.0" layoutY="409.0" prefHeight="23.0" prefWidth="133.0" text="Already registered?" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="23.0" layoutY="438.0" prefHeight="36.0" prefWidth="82.0" styleClass="login_button" stylesheets="@../css/buttons.css" text="Login">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children></AnchorPane>
+   </children>
+</GridPane>

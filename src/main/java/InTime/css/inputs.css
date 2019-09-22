@@ -8,3 +8,14 @@
     -fx-font-size: 15px;
     -fx-font-family: Arial;
 }
+
+.droplist {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-family: Arial;
+}
+
+.gender_radio_button {
+    -fx-font-size: 15px;
+    -fx-font-family: Arial;
+}
