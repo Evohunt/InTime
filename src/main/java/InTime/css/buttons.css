@@ -1,0 +1,27 @@
+/*
+*   File name: buttons.css
+*   Author: Dana Andrei - Iulian
+*/
+
+.login_button {
+    -fx-background-color: #2564b7;
+    -fx-text-fill: white;
+}
+
+.signup_button {
+    -fx-background-color: #0d8a13;
+    -fx-text-fill: white;
+}
+
+.remember_me_box {
+    -fx-text-fill: white;
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+}
+
+#forgot_pass_button {
+    -fx-text-fill: white;
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-underline: true;
+}

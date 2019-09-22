@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="InTime.controller.MainController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InTime.controller.MainController">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -14,6 +22,52 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="500.0" prefWidth="800.0" />
+      <AnchorPane prefHeight="500.0" prefWidth="900.0" styleClass="main_background" stylesheets="@../css/backgrounds.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="375.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.png" />
+               </image>
+            </ImageView>
+            <JFXTextField layoutX="345.0" layoutY="249.0" prefHeight="30.0" prefWidth="250.0" promptText="Username" styleClass="input_field" stylesheets="@../css/inputs.css" />
+            <JFXPasswordField layoutX="345.0" layoutY="312.0" prefHeight="30.0" prefWidth="250.0" promptText="Password" styleClass="input_field" stylesheets="@../css/inputs.css" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="305.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="305.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/password_logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="513.0" layoutY="379.0" prefHeight="36.0" prefWidth="82.0" styleClass="login_button" stylesheets="@../css/buttons.css" text="Login">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label id="forgot_pass_button" layoutX="393.0" layoutY="437.0" prefHeight="17.0" prefWidth="115.0" stylesheets="@../css/buttons.css" text="Forgot password?">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="679.0" layoutY="34.0" prefHeight="23.0" prefWidth="103.0" text="Not a member?" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="788.0" layoutY="27.0" prefHeight="36.0" prefWidth="82.0" styleClass="signup_button" stylesheets="@../css/buttons.css" text="Signup">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXCheckBox layoutX="310.0" layoutY="386.0" prefHeight="18.0" prefWidth="174.0" styleClass="remember_me_box" stylesheets="@../css/buttons.css" text="Remember username" />
+         </children></AnchorPane>
    </children>
 </GridPane>

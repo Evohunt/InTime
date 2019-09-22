@@ -1,0 +1,10 @@
+/*
+*   File name: inputs.css
+*   Author: Dana Andrei - Iulian
+*/
+
+.input_field {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-family: Arial;
+}

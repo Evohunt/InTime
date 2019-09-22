@@ -16,7 +16,7 @@ public class Main extends Application {
         URL url = new File("src/main/java/InTime/view/sample.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
         primaryStage.setTitle("InTime ALPHA");
-        primaryStage.setScene(new Scene(root, 800, 500));
+        primaryStage.setScene(new Scene(root, 900, 500));
         primaryStage.show();
     }
 
